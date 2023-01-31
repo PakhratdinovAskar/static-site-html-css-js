@@ -3,7 +3,7 @@ let city = 'Алматы'
 
 
 function find(){
-    let urlApi = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`
+    let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`
     $.ajax({
         url: urlApi, 
         dataType: 'json',       
