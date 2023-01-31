@@ -1,0 +1,20 @@
+body{		
+    background-image:  url(orig1.webp);
+    height: 100vh; 
+    background-size: 100% 100%;
+    text-align:center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#temp{
+    font-size: 30px;
+}
+
+h4, #city, span{
+    color:bisque;
+}
+
+input{
+    font-size: 20px;
+}
