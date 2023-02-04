@@ -4,7 +4,7 @@ body{
     background-size: 100% 100%;
     text-align:center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 #temp{
@@ -31,6 +31,10 @@ h3{
 
 #temp{
     color: #000;
+}
+
+h1{
+    margin: 0;
 }
 
   
