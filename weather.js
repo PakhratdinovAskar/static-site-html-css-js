@@ -28,10 +28,8 @@ function find(city = 'Almaty'){
 function findCity(){
     let cities = document.getElementById('text').value
     find(cities)
+    console.log('submit')
+    return false
 }
 
-function ent(event) {
-    if(event.code === 'Enter' | event.code === 'NumpadEnter'){
-        findCity()
-    }
-}
+ 
