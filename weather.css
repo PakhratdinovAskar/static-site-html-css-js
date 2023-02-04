@@ -11,10 +11,6 @@ body{
     font-size: 30px;
 }
 
-h4, #city, span{
-    color:bisque;
-}
-
 input{
     font-size: 20px;
 }
@@ -22,3 +18,19 @@ input{
 #button{
     margin: 5px;
 }
+
+.weather{
+    background-color: bisque;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+h3{
+    color:dimgray;
+}
+
+#temp{
+    color: #000;
+}
+
+  

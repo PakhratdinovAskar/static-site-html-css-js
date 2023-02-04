@@ -30,9 +30,5 @@ function findCity(){
     find(cities)
 }
 
-function hover(){
-    document.getElementById('h1').style.display = 'none'
-    document.getElementById('h2').style.display = 'none'
-}
 
  
