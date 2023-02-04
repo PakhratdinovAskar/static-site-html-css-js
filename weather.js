@@ -29,3 +29,9 @@ function findCity(){
     city = document.getElementById('text').value
     find()
 }
+
+document.addEventListener('keyup', function(event) {
+    if(event.code === 'Enter'){
+        findCity()
+    }
+})

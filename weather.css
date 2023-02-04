@@ -18,3 +18,7 @@ h4, #city, span{
 input{
     font-size: 20px;
 }
+
+#button{
+    margin: 5px;
+}
