@@ -30,8 +30,8 @@ function findCity(){
     find()
 }
 
-document.addEventListener('keyup', function(event) {
-    if(event.code === 'Enter' | event.code === 'NumpadEnter'){
+document.addEventListener('keypress', function(event) {
+    if(event.code === 'Enter' | event.code === 'NumpadEnter' | event.code === '13'){
         findCity()
     }
 })
