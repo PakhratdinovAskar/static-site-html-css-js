@@ -9,11 +9,12 @@
 </head>
 <body onload='find()'>
 	
-	<h1>Погода</h1>
-	<h2>Не бывает плохой погоды, бывает плохое настроение.</h2>
+	<h1 id="h1">Погода</h1>
+	<h2 id="h2">Не бывает плохой погоды, бывает плохое настроение.</h2>
 
-	<form onsubmit="event.preventDefault(); findCity()">
-		<input id='text' type='text' placeholder="Введите название города">
+	<!-- <form onsubmit="event.preventDefault(); findCity()"> -->
+	<form action="javascript:findCity()">
+		<input id='text' type='text' placeholder="Введите название города" onclick="hover()">
 		<input id="button" type='submit' value='Узнать погоду'>
 	</form>
 
