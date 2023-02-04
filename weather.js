@@ -28,8 +28,6 @@ function find(city = 'Almaty'){
 function findCity(){
     let cities = document.getElementById('text').value
     find(cities)
-    console.log('submit')
-    return false
 }
 
  
