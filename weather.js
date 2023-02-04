@@ -1,8 +1,8 @@
 let apiKey = '5aa741a37ff6512516bcb3da3ea973f0'
-let city = 'Алматы'
+// let city = 'Алматы'
 
 
-function find(){
+function find(city = 'Almaty'){
     let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`
     $.ajax({
         url: urlApi, 
@@ -26,12 +26,12 @@ function find(){
 
 
 function findCity(){
-    city = document.getElementById('text').value
-    find()
+    let cities = document.getElementById('text').value
+    find(cities)
 }
 
-document.addEventListener('keypress', function(event) {
-    if(event.code === 'Enter' | event.code === 'NumpadEnter' | event.code === 66){
+function ent(event) {
+    if(event.code === 'Enter' | event.code === 'NumpadEnter'){
         findCity()
     }
-})
+}

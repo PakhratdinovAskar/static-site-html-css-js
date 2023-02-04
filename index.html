@@ -7,12 +7,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="weather.css">
 </head>
-<body onload='find()'>
+<body onload='find()' onkeypress="ent(event)">
 	
 	<h1>Погода</h1>
 	<h2>Не бывает плохой погоды, бывает плохое настроение.</h2>
-	<input id='text' type='text' placeholder="Введите название города">
+
+	<input id='text' type='text' placeholder="Введите название города" onkeypress="ent(event)">
 	<input id="button" type='button' value='Узнать погоду' onclick="findCity()">
+
 	<h4>Не браните погоду – если бы она не менялась, девять человек из десяти не смогли бы начать ни одного разговора.</h4>
 	<div class="weather">
 		<h1 id="city"></h1>
