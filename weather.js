@@ -31,7 +31,7 @@ function findCity(){
 }
 
 document.addEventListener('keypress', function(event) {
-    if(event.code === 'Enter' | event.code === 'NumpadEnter' | event.code === '66'){
+    if(event.code === 'Enter' | event.code === 'NumpadEnter' | event.code === 66){
         findCity()
     }
 })
