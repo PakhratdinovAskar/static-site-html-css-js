@@ -1,6 +1,4 @@
 let apiKey = '5aa741a37ff6512516bcb3da3ea973f0'
-// let city = 'Алматы'
-
 
 function find(city = 'Almaty'){
     let urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`
@@ -30,5 +28,16 @@ function findCity(){
     find(cities)
 }
 
+document.getElementById('text').addEventListener('focus', ()=>{
+    document.getElementById('h1').style.display = 'none'
+    document.getElementById('h2').style.display = 'none'
+    document.getElementById('h4').style.display = 'none'
+})
+
+document.getElementById('text').addEventListener('blur', ()=>{
+    document.getElementById('h1').style.display = ''
+    document.getElementById('h2').style.display = ''
+    document.getElementById('h4').style.display = ''
+})
 
  
